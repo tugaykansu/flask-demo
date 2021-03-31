@@ -10,6 +10,10 @@ def home_page():
 
 @app.route('/get_request')
 def get_request():
+    """
+    get params and show them
+    :return: formatted key-value pairs
+    """
     asd = ""
     for key, value in request.args.items():
         asd += key + "=" + value + "; "
